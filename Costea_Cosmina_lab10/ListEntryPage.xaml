@@ -10,16 +10,12 @@
         </StackLayout>
     </ContentPage.Content>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add Shopping List"
- Clicked="OnShopListAddedClicked" />
+        <ToolbarItem Text="Add Shopping List" Clicked="OnShopListAddedClicked" />
     </ContentPage.ToolbarItems>
-    <ListView x:Name="listView"
- Margin="20"
- ItemSelected="OnListViewItemSelected">
+    <ListView x:Name="listView" Margin="20" ItemSelected="OnListViewItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Description}"
- Detail="{Binding Date}" />
+                <TextCell Text="{Binding Description}" Detail="{Binding Date}" />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
